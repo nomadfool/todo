@@ -33,7 +33,8 @@ function TodoForm({addTodo}) {
     )
 }
 function App() {
-  const [todos, setTodos] = useState(
+  //  write your useState hook here using this array as a starting point.
+  const todos = 
     [
     {
     text :  'Pickup groceries',
@@ -47,23 +48,23 @@ function App() {
         text :  'Take over the world!',
         isComplete : false
         }
-  ]);
+  ]
 
   const addTodo = text => {
-    const newTodos = [...todos, {text}];
-    setTodos(newTodos);
+    
+    //  complete this function to add a new entery to the todo list
+
   };
 
   const completeTodo = index  => {
-    const newTodos =  [...todos];
-    newTodos[index].isComplete= true;
-    setTodos(newTodos);
+    
+    //  complete this function to mark a todo entery as completed.
+
   };
 
   const deleteTodo = index => {
-    const newTodos = [...todos];
-    newTodos.splice(index, 1);
-    setTodos(newTodos);
+    
+    // complete this function to delete a todo entery.
 
   };
 
